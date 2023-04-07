@@ -2,6 +2,9 @@ from PIL import Image, ImageEnhance, ImageFilter
 import os
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
+import ctypes
+
+ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0 )
 
 path = r"Path to my picture"
 pathOut = r"Path to where I want the edited photo to go"
